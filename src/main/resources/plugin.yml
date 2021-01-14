@@ -1,0 +1,11 @@
+name: Practice
+version: ${project.version}
+main: net.minelc.practice.Practice
+api-version: 1.8
+author: ElBuenAnvita
+depend: [StrikePractice, PlaceholderAPI]
+commands:
+  practice:
+    description: infoac
+  top:
+    description: topac

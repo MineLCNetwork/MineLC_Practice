@@ -1,0 +1,109 @@
+# ========= MineLC Configuración =========
+#
+# YAML hecho por ElBuenAnvita
+# El plugin hecho por ElBuenAnvita.
+# Por favor mantener siempre un archivo de respaldo tipo .old_yml en caso de que hagas una pelotudez y se reinicie el archivo por error.
+# No cambiar la version-config a menos que sepas lo que estás haciendo.
+# No realizar NINGÚN cambio bajo la supervisión de un desarrollador (developer).
+#
+# ========= Fin MineLC Configuración =========
+version-config: 1
+
+is-in-practice: true
+
+permisos: # Si se quiere colocar un permiso NEGATIVO, colocar "-" al inicio. Ej: "-essentials.me", esto negará rotundamente el permiso al usuario.
+  default:
+    - "default.general"
+  vip:
+    - "vip.general"
+  svip:
+    - "svip.general"
+  elite:
+    - "elite.general"
+  ruby:
+    - "ruby.general"
+  youtuber:
+    - "yt.general" # This perm will also apply to MiniYT.
+  ayudante:
+    - "ayudante.general"
+  mod:
+    - "mod.general"
+  admod:
+    - "admod.general"
+  admin:
+    - "admin.general"
+  owner:
+    - "owner.general"
+
+mensaje-bienvenida: true
+
+mensajes:
+  welcome:
+    - "&8&l&m------------------------------------"
+    - "&a¡Bienvenido a &9&lPractice&a &f(&b$season$&f)&a, $user$!"
+    - "&8» &aPractica tus habilidades de PvP en este lugar &8«"
+    - "&4&l! &cLa temporada acabará el $proxrestart$ &4&l!"
+    - "&8&l&m------------------------------------"
+  titles-title: "&aPractice"
+  titles-subtitle: "&6www.minelc.net"
+  practice:
+    - "&aBienvenido a Practice, ¿nuevo por acá?"
+    - "&e¡Aquí hay una guía para ti! &9&narticulos.minelc.net/practice"
+  header: "&7 \n&9&lPractice&8\n " # Dejar en blanco ("") si no se desea colocar.
+  footer: "&7 \n&9&lWWW.MINELC.NET\n&a&lJugando en &e&lPLAY.MINELC.NET\n&8 "
+
+formatos: # Use §
+  hidden: "" # Unused. Used default as default.
+  default: "§e$player$§8 » §7$msg$"
+  premium: "§9§lPREMIUM §e$player$§8 » §7$msg$"
+  vip: "§b§lVIP $color$$player$§8 » §7$msg$"
+  svip: "§a§lSVIP $color$$player$§8 » §7$msg$"
+  elite: "§6§lELITE $color$$player$§8 » §7$msg$"
+  ruby: "§c§lRUBY $color$$player$§8 » §7$msg$"
+  builder: "§d§lBUILDER $color$$player$§8 » §7$msg$"
+  miniyt: "§f§lMini§c§lYT $color$$player$§8 » §7$msg$"
+  youtuber: "§c§lYouTuber $color$$player$§8 » §7$msg$"
+  ayudante: "§5§lAYUDANTE $color$$player$§8 » §7$msg$"
+  mod: "§5§lMOD $color$$player$§8 » §7$msg$"
+  admin: "§c§lADMIN $color$$player$§8 » §7$msg$"
+  owner: "§4§lOWNER $color$$player$§8 » §7$msg$"
+
+lcoins:
+  duel-win: 5
+  botduel-win:
+    easy: 1
+    normal: 2
+    hard: 4
+    hacker: 6
+  partyffa-win: 10
+  partyvsparty-win: 5 # Cada uno
+
+headsloc:
+  top1:
+    enabled: true
+    placeholder: "%strikepractice_top_global_elo1%"
+    world: 'spawn'
+    x: '10'
+    y: '60'
+    z: '12'
+  top2:
+    enabled: true
+    placeholder: "%strikepractice_top_global_elo2%"
+    world: 'spawn'
+    x: '12'
+    y: '59'
+    z: '11'
+  top3:
+    enabled: true
+    placeholder: "%strikepractice_top_global_elo3%"
+    world: 'spawn'
+    x: '8'
+    y: '59'
+    z: '11'
+
+elo-restart-info:
+  season: "Temporada 1"
+  proxrestart: "1 de Febrero de 2020"
+  premio: "§c§lRUBY§8 - §715 días"
+  requisito: "§aobtenga el mayor ELO global" # Al jugador que...
+  requisito-explicito: "§aObtener el primer puesto en el TOP de ELO global" # Requisito: ...
